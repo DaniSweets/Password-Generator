@@ -1,12 +1,10 @@
-// Assignment Code
+
 var generateBtn = document.querySelector("#generate");
 
-
 function writePassword() {
-//character selection
+
   var valueOptions = document.getElementById("valueOptions");
   var chars = "";
-  // var passwordLength = document.getElementById("pwLength").innerHTML;
   for (var v = 0; v < valueOptions.length; v++) {
     currentOption = valueOptions[v];
     if (currentOption.selected) {
@@ -14,11 +12,10 @@ function writePassword() {
     }
   }
 
-  var passwordLength = document.getElementById("pwLength").value;
+var passwordLength = document.getElementById("pwLength").value;
 function pwLength() {
   document.getElementById("pwLength").value == passwordLength;
 }
-
 pwLength();
 
   password = "";
@@ -31,16 +28,9 @@ pwLength();
   passwordText.value = password;
 }
 
-// var passwordLength = document.getElementById("pwLength").value;
-// function pwLength() {
-//   document.getElementById("pwLength").value == passwordLength;
-// }
-
-
 generateBtn.addEventListener("click", writePassword);
 var password = "";
 var chars = "";
-// var passwordLength = document.getElementById("pwLength").value;
 
 function copyText() {
     navigator.clipboard.writeText(password);
