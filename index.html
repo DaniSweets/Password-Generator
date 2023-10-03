@@ -17,21 +17,27 @@
           <h2>Generate a Password</h2>
         </article>
 
-        <form action = "">
+        <form>
           <fieldset>
-          <label>
+          <label for="valueOptions">
            Select what you'd like included in your new password. <br />
            (ctrl-click to select multiple lines) <br />
           </label>
           <select id = "valueOptions"
             multiple = "multiple"
             size = "4">
-           <option value = "abcdefghijklmnopqrstuvwxyz">lowercase</option>
-           <option value = "ABCDEFGHIJKLMNOPQRSTUVWXYZ">UPPERCASE</option>
-           <option value = "0123456789">Numbers</option>
-           <option value = "!@#$%^&*()">Special Characters</option>
+           <option type="checkbox" value = "abcdefghijklmnopqrstuvwxyz">lowercase</option><br />
+           <option type="checkbox" value = "ABCDEFGHIJKLMNOPQRSTUVWXYZ">UPPERCASE</option><br />
+           <option type="checkbox" value = "0123456789">Numbers</option><br />
+           <option type="checkbox" value = "!@#$%^&*()">Special Characters</option>
           </select>
           </fieldset>
+         </form>
+
+         <form>
+          <label for="pwLength">How many characters would you like?</label><br />
+          <input type="number" id="pwLength" min="8" max="128" value="" placeholder="10"></input><br />
+
          </form>
 
         <article class="card-body">
